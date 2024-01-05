@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Welcome</title>
+
+    <!-- Locomotive Scroll CSS and JS links -->
+    <link rel="stylesheet" href="path/to/locomotive-scroll.min.css">
+    <script src="path/to/locomotive-scroll.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        a {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #c0392b;
+        }
+
+        /* Add your animations here */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animated {
+            animation: slideDown 1.5s;
+        }
+    </style>
+</head>
+<body data-scroll-container>
+
+    <div data-scroll-section>
+        <header data-scroll>
+            <h1 class="animated">TaskMaster - Your Task Manager</h1>
+        </header>
+    </div>
+
+    <div data-scroll-section>
+        <main data-scroll>
+            <p class="animated">Organize your life with TaskMaster, the ultimate task management solution. Click the link below to get started!</p>
+            <a href="todo.html" class="animated">Go to TaskMaster</a>
+        </main>
+    </div>
+
+    <!-- Initialize Locomotive Scroll -->
+    <script>
+        const locoScroll = new LocomotiveScroll({
+            el: document.querySeslector('[data-scroll-container]'),
+            smooth: true
+        });
+    </script>
+</body>
+</html>
