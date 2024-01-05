@@ -27,7 +27,7 @@ Contributions welcome! Open an issue or submit a pull request.
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) for details.
+MIT License - see by deepak and team for details.
 
 ---
 
